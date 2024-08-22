@@ -1,0 +1,12 @@
+version: '3' 
+services:
+  database:
+    container_name: postgres-tooth-fixers-frontend
+    image: postgres:latest
+    ports:
+      - "5431:5432" 
+    volumes:
+      - /Users/paulairabor/Documents/csc202:/data/postgres
+    env_file:
+      - tooth-fixers-frontend.env
+      
